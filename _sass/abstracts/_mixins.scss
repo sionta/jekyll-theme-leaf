@@ -1,0 +1,19 @@
+@use "sass:meta";
+
+@mixin relative-font-size($ratio) {
+  @if meta.type-of($ratio) == "number" {
+    font-size: #{$ratio}rem;
+  } @else {
+    @error "Required number on relative eg. 1.25";
+  }
+}
+
+@mixin media-query($device) {
+  @if meta.type-of($device) == "number" {
+    @media screen and (max-width: $device) {
+      @content;
+    }
+  } @else {
+    @error "Required number on pixel eg. 768px";
+  }
+}
