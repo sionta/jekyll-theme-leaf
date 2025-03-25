@@ -1,0 +1,5 @@
+*.min.*
+vendor/
+**/_drafts/*.md
+**/_posts/*.md
+**/pages/*.md

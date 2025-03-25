@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-
 <div class="home">
-
   {{ content }}
 
   {% assign posts = site.posts %}
-
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
@@ -22,7 +19,5 @@ layout: default
         {%- endfor -%}
       </div>
     </div>
-
   {%- endif -%}
-
 </div>
